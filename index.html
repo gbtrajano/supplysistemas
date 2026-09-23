@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Supply Sistemas - Software sob medida</title>
+    <meta name="description" content="Solucoes de software sob medida para acelerar seu negocio com qualidade, agilidade e suporte proximo." />
+    <link rel="canonical" href="https://supplysistemas.netlify.app/" />
+    <meta property="og:title" content="Supply Sistemas - Software sob medida" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://supplysistemas.netlify.app/" />
+    <meta name="theme-color" content="#f03612" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon-16x16.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: { extend: { colors: { brand: { DEFAULT: '#f03612', 50: '#fff4f2', 100: '#ffe4de', 500: '#f03612', 600: '#c82a0b', 700: '#a32209' } }, fontFamily: { display: ['Outfit','sans-serif'], body: ['Inter','sans-serif'] } } }
+      }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="bg-white font-body text-gray-800 antialiased">
+
+    <a href="https://wa.link/f85y71" target="_blank" class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 shadow-lg shadow-green-500/30 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-green-500/40">
+      <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
+    </a>
+
+    <header id="site-header" class="fixed inset-x-0 top-0 z-40 transition-all duration-300">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="#home" class="group flex items-center gap-2.5">
+            <span class="flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl bg-brand shadow-sm shadow-brand/30 transition-all duration-300 group-hover:shadow-md group-hover:shadow-brand/50">
+              <img src="src/logosupply.jpg" alt="Logo Supply Sistemas" class="h-full w-full object-cover" />
+            </span>
+            <span class="font-display text-lg font-bold text-gray-900">Supply <span class="text-brand">Sistemas</span></span>
+          </a>
+          <nav class="hidden items-center gap-8 text-sm font-medium text-gray-600 md:flex">
+            <a href="#sobre" class="transition-colors hover:text-brand">Sobre</a>
+            <a href="#servicos" class="transition-colors hover:text-brand">Servicos</a>
+            <a href="#projetos" class="transition-colors hover:text-brand">Projetos</a>
+            <a href="#equipe" class="transition-colors hover:text-brand">Equipe</a>
+            <a href="#contatos" class="transition-colors hover:text-brand">Contato</a>
+            <a href="#contatos" class="inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2 text-sm font-semibold text-white shadow-md shadow-brand/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-lg hover:shadow-brand/40">Solicitar proposta</a>
+          </nav>
+          <button id="menu-btn" class="inline-flex items-center justify-center rounded-lg border border-gray-200 p-2 text-gray-600 transition hover:bg-gray-50 md:hidden" aria-label="Abrir menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-nav" class="hidden border-t border-gray-100 bg-white/95 backdrop-blur-md md:hidden">
+        <nav class="mx-auto max-w-7xl space-y-1 px-4 py-4 sm:px-6">
+          <a href="#sobre" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-50 hover:text-brand">Sobre</a>
+          <a href="#servicos" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-50 hover:text-brand">Servicos</a>
+          <a href="#projetos" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-50 hover:text-brand">Projetos</a>
+          <a href="#equipe" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-50 hover:text-brand">Equipe</a>
+          <a href="#contatos" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-50 hover:text-brand">Contato</a>
+          <div class="pt-2"><a href="#contatos" class="block rounded-full bg-brand px-5 py-2.5 text-center text-sm font-semibold text-white">Solicitar proposta</a></div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="relative min-h-screen overflow-hidden bg-gradient-to-br from-gray-50 via-white to-brand-50">
+      <div class="pointer-events-none absolute inset-0 overflow-hidden">
+        <div class="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-brand/5 blur-3xl"></div>
+        <div class="absolute -left-40 top-1/2 h-80 w-80 rounded-full bg-orange-100/60 blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 h-64 w-64 rounded-full bg-brand/5 blur-3xl"></div>
+      </div>
+      <div class="relative mx-auto max-w-7xl px-4 pb-20 pt-32 sm:px-6 lg:px-8 lg:pt-40">
+        <div class="grid items-center gap-14 lg:grid-cols-2">
+          <div class="fade-in">
+            <span class="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-4 py-1.5 text-sm font-semibold text-brand">
+              <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-brand"></span>
+              Software sob medida - Rio de Janeiro
+            </span>
+            <h1 class="mt-6 font-display text-5xl font-black leading-tight text-gray-900 sm:text-6xl lg:text-7xl">
+              Seu sistema,<br /><span class="gradient-text">do zero</span><br />ao deploy.
+            </h1>
+            <p class="mt-6 max-w-lg text-lg leading-relaxed text-gray-500">Transformamos ideias em software robusto e escalavel. Da arquitetura a entrega, com qualidade, transparencia e foco total no seu negocio.</p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#contatos" class="inline-flex items-center gap-2 rounded-full bg-brand px-7 py-3.5 font-semibold text-white shadow-lg shadow-brand/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-xl hover:shadow-brand/40">
+                Comecar um projeto
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+              <a href="#projetos" class="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-7 py-3.5 font-semibold text-gray-700 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand hover:text-brand">Ver projetos</a>
+            </div>
+            <div class="mt-12 flex items-center gap-4">
+              <div class="flex -space-x-3">
+                <img src="src/minha_photo.png" alt="Gabriel Trajano" class="h-10 w-10 rounded-full object-cover ring-2 ring-white" />
+                <div class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-brand to-orange-400 ring-2 ring-white"><span class="text-xs font-bold text-white">RF</span></div>
+              </div>
+              <p class="text-sm text-gray-500"><span class="font-semibold text-gray-900">+15 projetos</span> entregues com sucesso</p>
+            </div>
+          </div>
+          <div class="relative fade-in-delay">
+            <div class="relative overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-2xl shadow-gray-200/80">
+              <div class="flex items-center gap-2 border-b border-gray-100 bg-gray-50 px-4 py-3">
+                <span class="h-3 w-3 rounded-full bg-red-400"></span>
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <span class="h-3 w-3 rounded-full bg-green-400"></span>
+                <span class="ml-4 font-mono text-xs text-gray-400">supply-dashboard - producao</span>
+              </div>
+              <img src="src/hero-dashboard.jpg" alt="Dashboard Supply Sistemas" class="w-full object-cover" />
+            </div>
+            <div class="absolute -left-5 top-1/3 rounded-2xl border border-gray-100 bg-white p-4 shadow-xl shadow-gray-200/80">
+              <div class="flex items-center gap-3">
+                <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-green-100"><i class="fa-solid fa-check text-green-600"></i></div>
+                <div><p class="text-xs text-gray-400">Ultimo deploy</p><p class="text-sm font-semibold text-gray-900">Sucesso - agora</p></div>
+              </div>
+            </div>
+            <div class="absolute -right-5 bottom-1/3 rounded-2xl border border-gray-100 bg-white p-4 shadow-xl shadow-gray-200/80">
+              <div class="flex items-center gap-3">
+                <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-brand/10"><i class="fa-solid fa-rocket text-brand"></i></div>
+                <div><p class="text-xs text-gray-400">Performance</p><p class="text-sm font-semibold text-gray-900">99.9% uptime</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-8 left-1/2 flex -translate-x-1/2 animate-bounce flex-col items-center gap-1">
+        <p class="text-xs font-medium text-gray-400">Scroll</p>
+        <svg class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </div>
+    </section>
+
+    <section class="border-y border-gray-100 bg-gray-50">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 gap-8 text-center sm:grid-cols-4">
+          <div class="fade-in"><p class="counter font-display text-5xl font-black text-brand" data-target="15" data-suffix="+">0+</p><p class="mt-2 text-sm font-medium text-gray-500">Projetos entregues</p></div>
+          <div class="fade-in"><p class="counter font-display text-5xl font-black text-brand" data-target="12" data-suffix="+">0+</p><p class="mt-2 text-sm font-medium text-gray-500">Clientes satisfeitos</p></div>
+          <div class="fade-in"><p class="counter font-display text-5xl font-black text-brand" data-target="3" data-suffix="+">0+</p><p class="mt-2 text-sm font-medium text-gray-500">Anos de experiencia</p></div>
+          <div class="fade-in"><p class="font-display text-5xl font-black text-brand">99<span class="text-3xl">%</span></p><p class="mt-2 text-sm font-medium text-gray-500">Taxa de satisfacao</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="scroll-mt-20 py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid items-center gap-16 lg:grid-cols-2">
+          <div class="relative order-2 lg:order-1 fade-in">
+            <div class="overflow-hidden rounded-3xl"><img src="src/supply.jpg" alt="Supply Sistemas" class="h-full w-full object-cover" /></div>
+            <div class="absolute -bottom-5 -right-5 rounded-2xl border border-gray-100 bg-white p-5 shadow-xl">
+              <div class="flex items-center gap-3">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand"><i class="fa-solid fa-code text-lg text-white"></i></div>
+                <div><p class="font-semibold text-gray-900">Desde 2022</p><p class="text-sm text-gray-500">Inovando no RJ</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2 fade-in">
+            <span class="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-4 py-1.5 text-sm font-semibold text-brand">Sobre nos</span>
+            <h2 class="mt-4 font-display text-4xl font-black leading-tight text-gray-900">Engenharia seria.<br />Resultado real.</h2>
+            <p class="mt-5 leading-relaxed text-gray-500">A Supply Sistemas nasceu com uma missao clara: entregar software de alto nivel para negocios que precisam crescer. Combinamos engenharia de software, UX estrategico e metodologias ageis para construir produtos que funcionam de verdade.</p>
+            <p class="mt-4 leading-relaxed text-gray-500">Trabalhamos proximos ao cliente, com transparencia total no processo, prazos reais e codigo que voce pode confiar hoje e daqui a 5 anos.</p>
+            <ul class="mt-8 space-y-3">
+              <li class="flex items-start gap-3"><span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand/10"><i class="fa-solid fa-check text-xs text-brand"></i></span><span class="text-gray-700">Arquitetura escalavel e segura desde o dia 1</span></li>
+              <li class="flex items-start gap-3"><span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand/10"><i class="fa-solid fa-check text-xs text-brand"></i></span><span class="text-gray-700">Time focado em resultado, nao apenas em entregas</span></li>
+              <li class="flex items-start gap-3"><span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand/10"><i class="fa-solid fa-check text-xs text-brand"></i></span><span class="text-gray-700">Comunicacao clara e prazos que sao cumpridos</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="servicos" class="scroll-mt-20 bg-gray-50 py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center fade-in">
+          <span class="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-4 py-1.5 text-sm font-semibold text-brand">O que fazemos</span>
+          <h2 class="mt-4 font-display text-4xl font-black text-gray-900">Nossos Servicos</h2>
+          <p class="mx-auto mt-4 max-w-2xl text-gray-500">Do conceito ao produto final, cobrimos todas as etapas do desenvolvimento com qualidade e metodologia.</p>
+        </div>
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="group rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-xl hover:shadow-brand/5 fade-in">
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand/10 transition-all duration-300 group-hover:bg-brand"><i class="fa-solid fa-globe text-xl text-brand transition-colors duration-300 group-hover:text-white"></i></div>
+            <h3 class="font-display text-lg font-bold text-gray-900">Desenvolvimento Web</h3>
+            <p class="mt-2 text-sm leading-relaxed text-gray-500">Sites institucionais, sistemas web, landing pages e aplicacoes completas com foco em performance e conversao.</p>
+          </div>
+          <div class="group rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-xl hover:shadow-brand/5 fade-in">
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand/10 transition-all duration-300 group-hover:bg-brand"><i class="fa-solid fa-mobile-screen text-xl text-brand transition-colors duration-300 group-hover:text-white"></i></div>
+            <h3 class="font-display text-lg font-bold text-gray-900">Apps Mobile</h3>
+            <p class="mt-2 text-sm leading-relaxed text-gray-500">Aplicativos para Android e iOS com experiencia de usuario impecavel, alta performance e design nativo.</p>
+          </div>
+          <div class="group rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-xl hover:shadow-brand/5 fade-in">
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand/10 transition-all duration-300 group-hover:bg-brand"><i class="fa-solid fa-plug text-xl text-brand transition-colors duration-300 group-hover:text-white"></i></div>
+            <h3 class="font-display text-lg font-bold text-gray-900">APIs e Integracoes</h3>
+            <p class="mt-2 text-sm leading-relaxed text-gray-500">APIs RESTful, GraphQL e integracoes com sistemas externos, gateways de pagamento e plataformas SaaS.</p>
+          </div>
+          <div class="group rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-xl hover:shadow-brand/5 fade-in">
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand/10 transition-all duration-300 group-hover:bg-brand"><i class="fa-solid fa-lightbulb text-xl text-brand transition-colors duration-300 group-hover:text-white"></i></div>
+            <h3 class="font-display text-lg font-bold text-gray-900">Consultoria Tecnica</h3>
+            <p class="mt-2 text-sm leading-relaxed text-gray-500">Analise de arquitetura, code review, definicao de stack e roadmap tecnologico para o seu produto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-gray-100 py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center fade-in">
+          <span class="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-4 py-1.5 text-sm font-semibold text-brand">Tecnologias</span>
+          <h2 class="mt-4 font-display text-4xl font-black text-gray-900">Nossa Stack</h2>
+          <p class="mx-auto mt-4 max-w-xl text-gray-500">Dominamos as ferramentas mais modernas e confiaveis do mercado.</p>
+        </div>
+        <div class="mt-14 grid grid-cols-3 gap-4 sm:grid-cols-4 lg:grid-cols-6">
+          <div class="fade-in flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"><i class="fa-brands fa-react text-3xl text-sky-500"></i><span class="text-xs font-medium text-gray-600">React</span></div>
+          <div class="fade-in flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"><i class="fa-brands fa-node-js text-3xl text-green-600"></i><span class="text-xs font-medium text-gray-600">Node.js</span></div>
+          <div class="fade-in flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"><i class="fa-brands fa-python text-3xl text-yellow-500"></i><span class="text-xs font-medium text-gray-600">Python</span></div>
+          <div class="fade-in flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"><i class="fa-brands fa-js text-3xl text-yellow-400"></i><span class="text-xs font-medium text-gray-600">JavaScript</span></div>
+          <div class="fade-in flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"><i class="fa-brands fa-docker text-3xl text-blue-500"></i><span class="text-xs font-medium text-gray-600">Docker</span></div>
+          <div class="fade-in flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"><i class="fa-brands fa-git-alt text-3xl text-orange-600"></i><span class="text-xs font-medium text-gray-600">Git</span></div>
+          <div class="fade-in flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"><i class="fa-brands fa-aws text-3xl text-orange-500"></i><span class="text-xs font-medium text-gray-600">AWS</span></div>
+          <div class="fade-in flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"><i class="fa-solid fa-database text-3xl text-slate-500"></i><span class="text-xs font-medium text-gray-600">PostgreSQL</span></div>
+          <div class="fade-in flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"><i class="fa-brands fa-html5 text-3xl text-orange-500"></i><span class="text-xs font-medium text-gray-600">HTML5</span></div>
+          <div class="fade-in flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"><i class="fa-brands fa-css3-alt text-3xl text-blue-500"></i><span class="text-xs font-medium text-gray-600">CSS3</span></div>
+          <div class="fade-in flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"><i class="fa-brands fa-figma text-3xl text-purple-500"></i><span class="text-xs font-medium text-gray-600">Figma</span></div>
+          <div class="fade-in flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"><i class="fa-brands fa-github text-3xl text-gray-800"></i><span class="text-xs font-medium text-gray-600">GitHub</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="scroll-mt-20 bg-gray-50 py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between fade-in">
+          <div><span class="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-4 py-1.5 text-sm font-semibold text-brand">Portfolio</span><h2 class="mt-4 font-display text-4xl font-black text-gray-900">Nossos Projetos</h2></div>
+          <a href="#contatos" class="hidden items-center gap-2 rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-gray-700 transition hover:border-brand hover:text-brand sm:inline-flex">Falar sobre um projeto <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        </div>
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/80 fade-in">
+            <div class="relative overflow-hidden">
+              <img src="src/menu_project.jpg" alt="Cardapios Digitais" class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+              <span class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-brand backdrop-blur-sm">Digital</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold text-gray-900">Cardapios Digitais</h3>
+              <p class="mt-2 text-sm leading-relaxed text-gray-500">Sistema de cardapio digital para restaurantes e lanchonetes. Interface elegante que aumenta a credibilidade e agiliza o atendimento.</p>
+              <div class="mt-4 flex flex-wrap gap-2"><span class="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">React</span><span class="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">Node.js</span><span class="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">Web App</span></div>
+            </div>
+          </article>
+          <article class="fade-in group flex min-h-72 flex-col items-center justify-center overflow-hidden rounded-2xl border border-dashed border-gray-300 bg-white p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-xl">
+            <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-gray-100 transition-colors duration-300 group-hover:bg-brand/10"><i class="fa-solid fa-plus text-2xl text-gray-400 transition-colors duration-300 group-hover:text-brand"></i></div>
+            <h3 class="mt-5 font-display text-lg font-bold text-gray-700">Proximo projeto</h3>
+            <p class="mt-2 max-w-xs text-sm text-gray-400">Pode ser o seu! Entre em contato e vamos construir algo incrivel juntos.</p>
+            <a href="#contatos" class="mt-6 inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-brand/30 transition-all hover:bg-brand-600">Comecar agora</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe" class="scroll-mt-20 py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center fade-in">
+          <span class="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-4 py-1.5 text-sm font-semibold text-brand">Pessoas</span>
+          <h2 class="mt-4 font-display text-4xl font-black text-gray-900">Nossa Equipe</h2>
+          <p class="mx-auto mt-4 max-w-xl text-gray-500">Gente que une visao de produto, engenharia solida e cuidado genuino com a experiencia.</p>
+        </div>
+        <div class="mx-auto mt-12 grid max-w-3xl gap-8 sm:grid-cols-2">
+          <article class="group relative rounded-3xl border border-gray-200 bg-white p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand/5 fade-in">
+            <div class="relative mx-auto mb-5 h-24 w-24">
+              <img src="src/minha_photo.png" alt="Gabriel Trajano" class="h-full w-full rounded-full object-cover ring-4 ring-brand/20 transition-all duration-300 group-hover:ring-brand/50" />
+              <span class="absolute bottom-0 right-0 flex h-7 w-7 items-center justify-center rounded-full bg-brand shadow-sm"><i class="fa-solid fa-code text-xs text-white"></i></span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-gray-900">Gabriel Trajano</h3>
+            <p class="mt-1 text-sm font-semibold text-brand">CEO - Desenvolvimento e Design</p>
+            <p class="mt-4 text-sm leading-relaxed text-gray-500">Focado em escalabilidade, qualidade de codigo e observabilidade. Apaixonado por produtos que resolvem problemas reais.</p>
+            <div class="mt-5 flex justify-center gap-3">
+              <a href="#" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-gray-500 transition hover:bg-brand hover:text-white"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+              <a href="#" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-gray-500 transition hover:bg-brand hover:text-white"><i class="fa-brands fa-github text-xs"></i></a>
+            </div>
+          </article>
+          <article class="group relative rounded-3xl border border-gray-200 bg-white p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand/5 fade-in">
+            <div class="relative mx-auto mb-5 h-24 w-24">
+              <div class="flex h-full w-full items-center justify-center rounded-full bg-gradient-to-br from-brand to-orange-400 ring-4 ring-brand/20 transition-all duration-300 group-hover:ring-brand/50"><span class="font-display text-3xl font-black text-white">RF</span></div>
+              <span class="absolute bottom-0 right-0 flex h-7 w-7 items-center justify-center rounded-full bg-brand shadow-sm"><i class="fa-solid fa-database text-xs text-white"></i></span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-gray-900">Rodrigo Ferreira</h3>
+            <p class="mt-1 text-sm font-semibold text-brand">Diretor Executivo - Dev e Dados</p>
+            <p class="mt-4 text-sm leading-relaxed text-gray-500">Especialista em ciclos de entrega curtos e alinhamento com metas de negocio. Referencia em dados e integracoes.</p>
+            <div class="mt-5 flex justify-center gap-3">
+              <a href="#" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-gray-500 transition hover:bg-brand hover:text-white"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+              <a href="#" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-gray-500 transition hover:bg-brand hover:text-white"><i class="fa-brands fa-github text-xs"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="relative overflow-hidden bg-gradient-to-r from-brand to-orange-500 py-20">
+      <div class="pointer-events-none absolute inset-0">
+        <div class="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-white/5 blur-3xl"></div>
+        <div class="absolute -bottom-20 -right-20 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
+      </div>
+      <div class="relative mx-auto max-w-4xl px-4 text-center sm:px-6">
+        <h2 class="font-display text-4xl font-black text-white sm:text-5xl">Pronto para tirar sua ideia do papel?</h2>
+        <p class="mx-auto mt-6 max-w-xl text-lg text-white/80">Vamos conversar sobre o seu projeto. Sem compromisso, sem pressao, so uma boa conversa sobre como podemos ajudar.</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#contatos" class="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 font-bold text-brand shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl">Falar com a equipe <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="https://wa.link/f85y71" target="_blank" class="inline-flex items-center gap-2 rounded-full border-2 border-white/60 px-8 py-4 font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/10"><i class="fa-brands fa-whatsapp"></i> WhatsApp direto</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatos" class="scroll-mt-20 py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-2">
+          <div class="fade-in">
+            <span class="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-4 py-1.5 text-sm font-semibold text-brand">Fale conosco</span>
+            <h2 class="mt-4 font-display text-4xl font-black text-gray-900">Entre em<br />contato</h2>
+            <p class="mt-5 leading-relaxed text-gray-500">Conte um pouco do seu desafio ou ideia. Respondemos em ate 1 dia util e adoramos boas conversas sobre tecnologia.</p>
+            <div class="mt-8 space-y-5">
+              <div class="flex items-center gap-4">
+                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand/10"><i class="fa-solid fa-envelope text-brand"></i></div>
+                <div><p class="text-xs font-semibold uppercase tracking-wider text-gray-400">E-mail</p><a href="mailto:contatosupplysistemas@gmail.com" class="font-medium text-gray-900 transition-colors hover:text-brand">contatosupplysistemas@gmail.com</a></div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand/10"><i class="fa-solid fa-map-pin text-brand"></i></div>
+                <div><p class="text-xs font-semibold uppercase tracking-wider text-gray-400">Localizacao</p><p class="font-medium text-gray-900">Rio de Janeiro - RJ, Brasil</p></div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand/10"><i class="fa-brands fa-whatsapp text-brand"></i></div>
+                <div><p class="text-xs font-semibold uppercase tracking-wider text-gray-400">WhatsApp</p><a href="https://wa.link/f85y71" target="_blank" class="font-medium text-gray-900 transition-colors hover:text-brand">Iniciar conversa</a></div>
+              </div>
+            </div>
+            <div class="mt-10">
+              <p class="mb-4 text-sm font-medium text-gray-500">Nos siga nas redes</p>
+              <div class="flex gap-3">
+                <a href="#" class="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-100 text-gray-500 transition-all hover:-translate-y-0.5 hover:bg-blue-600 hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-100 text-gray-500 transition-all hover:-translate-y-0.5 hover:bg-pink-600 hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-100 text-gray-500 transition-all hover:-translate-y-0.5 hover:bg-blue-700 hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-100 text-gray-500 transition-all hover:-translate-y-0.5 hover:bg-gray-900 hover:text-white"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="fade-in">
+            <form id="contact-form" class="space-y-5 rounded-3xl border border-gray-200 bg-white p-8 shadow-lg shadow-gray-100/80">
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="name" class="mb-2 block text-sm font-semibold text-gray-700">Nome</label>
+                  <input id="name" type="text" placeholder="Seu nome completo" required class="w-full rounded-xl border-2 border-gray-200 px-4 py-3 text-sm text-gray-900 placeholder-gray-400 outline-none transition-all focus:border-brand focus:ring-4 focus:ring-brand/10" />
+                </div>
+                <div>
+                  <label for="email" class="mb-2 block text-sm font-semibold text-gray-700">E-mail</label>
+                  <input id="email" type="email" placeholder="voce@exemplo.com" required class="w-full rounded-xl border-2 border-gray-200 px-4 py-3 text-sm text-gray-900 placeholder-gray-400 outline-none transition-all focus:border-brand focus:ring-4 focus:ring-brand/10" />
+                </div>
+              </div>
+              <div>
+                <label for="subject" class="mb-2 block text-sm font-semibold text-gray-700">Tipo de projeto</label>
+                <select id="subject" class="w-full rounded-xl border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition-all focus:border-brand focus:ring-4 focus:ring-brand/10">
+                  <option value="">Selecione...</option>
+                  <option>Desenvolvimento Web</option>
+                  <option>App Mobile</option>
+                  <option>API / Integracao</option>
+                  <option>Consultoria Tecnica</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+              <div>
+                <label for="message" class="mb-2 block text-sm font-semibold text-gray-700">Mensagem</label>
+                <textarea id="message" rows="5" placeholder="Descreva seu projeto ou ideia..." required class="w-full resize-none rounded-xl border-2 border-gray-200 px-4 py-3 text-sm text-gray-900 placeholder-gray-400 outline-none transition-all focus:border-brand focus:ring-4 focus:ring-brand/10"></textarea>
+              </div>
+              <button type="submit" id="submit-btn" class="w-full rounded-xl bg-brand py-4 font-bold text-white shadow-lg shadow-brand/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-xl hover:shadow-brand/40 active:translate-y-0">
+                Enviar mensagem <i class="fa-solid fa-paper-plane ml-2"></i>
+              </button>
+              <p class="text-center text-xs text-gray-400">Ao enviar, voce concorda com nossa <a href="#" class="underline hover:text-brand">politica de privacidade</a>.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-t border-gray-100 bg-gray-900">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div class="grid gap-10 md:grid-cols-4">
+          <div class="md:col-span-2">
+            <div class="flex items-center gap-2.5">
+              <span class="flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl bg-brand"><img src="src/logosupply.jpg" alt="Logo Supply Sistemas" class="h-full w-full object-cover" /></span>
+              <span class="font-display text-lg font-bold text-white">Supply <span class="text-brand">Sistemas</span></span>
+            </div>
+            <p class="mt-4 max-w-sm text-sm leading-relaxed text-gray-400">Software claro, confiavel e escalavel. Parceria de longo prazo com foco em resultado e crescimento real do seu negocio.</p>
+            <div class="mt-6 flex gap-3">
+              <a href="#" class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-gray-400 transition hover:bg-brand hover:text-white"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+              <a href="#" class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-gray-400 transition hover:bg-brand hover:text-white"><i class="fa-brands fa-instagram text-xs"></i></a>
+              <a href="#" class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-gray-400 transition hover:bg-brand hover:text-white"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+              <a href="#" class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-gray-400 transition hover:bg-brand hover:text-white"><i class="fa-brands fa-github text-xs"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-white">Navegacao</h4>
+            <ul class="mt-5 space-y-3 text-sm">
+              <li><a href="#home" class="text-gray-400 transition hover:text-brand">Home</a></li>
+              <li><a href="#sobre" class="text-gray-400 transition hover:text-brand">Sobre nos</a></li>
+              <li><a href="#servicos" class="text-gray-400 transition hover:text-brand">Servicos</a></li>
+              <li><a href="#projetos" class="text-gray-400 transition hover:text-brand">Projetos</a></li>
+              <li><a href="#equipe" class="text-gray-400 transition hover:text-brand">Equipe</a></li>
+              <li><a href="#contatos" class="text-gray-400 transition hover:text-brand">Contato</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-white">Legal</h4>
+            <ul class="mt-5 space-y-3 text-sm">
+              <li><a href="#" onclick="alert('Em breve'); return false;" class="text-gray-400 transition hover:text-brand">Termos e Condicoes</a></li>
+              <li><a href="#" onclick="alert('Em breve'); return false;" class="text-gray-400 transition hover:text-brand">Politica de Privacidade</a></li>
+              <li><a href="mailto:contatosupplysistemas@gmail.com" class="text-gray-400 transition hover:text-brand">contatosupplysistemas@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-12 flex flex-col items-center gap-3 border-t border-white/5 pt-8 sm:flex-row sm:justify-between">
+          <p class="text-sm text-gray-500">2025 Supply Sistemas. Todos os direitos reservados.</p>
+          <p class="text-sm text-gray-600">Feito com amor no Rio de Janeiro</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ── Gradient Text ── */
+.gradient-text {
+  background: linear-gradient(135deg, #f03612 0%, #ff6b35 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Fade-in ao scroll (controlado pelo JS) ── */
+.fade-in,
+.fade-in-delay {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.fade-in-delay {
+  transition-delay: 0.18s;
+}
+
+.fade-in.visible,
+.fade-in-delay.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Dot-grid decorativo ── */
+.dot-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(240, 54, 18, 0.10) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+/* ── Scrollbar personalizada ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f9fafb;
+}
+::-webkit-scrollbar-thumb {
+  background: #f03612;
+  border-radius: 99px;
+}
+
+/* ── Seleção de texto ── */
+::selection {
+  background: rgba(240, 54, 18, 0.15);
+  color: #f03612;
+}
+
+/* ── Focus visible acessível ── */
+:focus-visible {
+  outline: 2px solid #f03612;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
